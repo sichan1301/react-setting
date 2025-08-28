@@ -1,8 +1,11 @@
 import styled from "styled-components";
 import { MainArea } from "../common/style";
+import { useParams } from "react-router-dom";
 
 const Test = () => {
+  const {id:blogId} = useParams();
 
+  console.log(blogId);
   return (
     <Container>
       <Main>
